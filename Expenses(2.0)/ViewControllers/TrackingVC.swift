@@ -60,6 +60,9 @@ class TrackingVC: UIViewController {
                 self.tableView.reloadData()
             }
             
+            TrackingVC.total = 0
+            self.totalLabel.text = String(TrackingVC.total)
+            
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (action) in
